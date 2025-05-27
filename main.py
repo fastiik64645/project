@@ -517,11 +517,11 @@ async def start_game_post_func(message: Message):
             url_referal_programm = hlink(f'Реферальная программа [{lose_withdraw}%]', URL_BOT)
             name_game = await get_name_game(text=exodus)
 
-            res = await bot.send_message(chat_id=channal_id, text=f'<b>🤵🏻‍♂️ Крупье принял новую ставку.</b>\n\n'
+            res = await bot.send_message(chat_id=channal_id, text=f'<b>🤵🏻‍♂️ Успешно! Новая ставка принята.</b>\n\n'
                                                                   f'👤 Игрок: <b>{first_name}</b>\n'
                                                                   f'💸 Ставка: <b>{amount}$</b>\n'
-                                                                  f'☁️ Исход: <b>{exodus}</b>\n'
                                                                   f'🕹 Игра: <b>({name_game})</b>\n\n'
+                                                                  f'☁️ Исход: <b>{exodus}</b>\n'
                                                                   f'<b>{help_stavka} | {info_channal} | {url_viplata}\n'
                                                                   f'[ {url_referal_programm} ]</b>',
                                          reply_markup=send_stavka(), disable_web_page_preview=True)
